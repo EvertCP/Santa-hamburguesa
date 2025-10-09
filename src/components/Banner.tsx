@@ -31,15 +31,22 @@ const Banner = () => {
   const promo = promotions[currentPromo]
 
   return (
-    <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center py-4 md:py-6 animate-pulse-slow">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="font-creepster text-xl md:text-3xl mb-1 md:mb-2">{promo.title}</h1>
-        <p className="text-sm md:text-lg">
+    <div className="relative text-white text-center py-8 md:py-16 lg:py-20 animate-pulse-slow overflow-hidden md:min-h-[300px] lg:min-h-[450px] lg:w-[1200px] lg:mx-auto">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/banner-halloween-rojo.png)' }}
+      />
+      
+      {/* Content */}
+      <div className="relative z-10 max-w-full mx-auto px-4">
+        <h1 className="font-creepster text-2xl md:text-4xl lg:text-5xl mb-2 md:mb-3">{promo.title}</h1>
+        <p className="text-base md:text-xl lg:text-2xl">
           {promo.text.split(promo.highlight)[0]}
           <span className="text-yellow-300 font-bold">{promo.highlight}</span>
           {promo.text.split(promo.highlight)[1]}
         </p>
-        <p className="text-xs md:text-sm mt-1 md:mt-2">Válido hasta el 31 de Octubre</p>
+        <p className="text-sm md:text-base lg:text-lg mt-2 md:mt-3">Válido hasta el 31 de Octubre</p>
       </div>
     </div>
   )
