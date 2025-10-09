@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&family=Dancing+Script:wght@700&family=BBH+Sans+Bogle&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-creepster {
+  font-family: 'Creepster', cursive;
+}
+
+.font-above-beyond {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+.font-bbh-sans {
+  font-family: 'BBH Sans Bogle', sans-serif;
+  font-weight: 400;
+}
