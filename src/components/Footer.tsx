@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <div>
             <h3 className="font-creepster text-xl md:text-2xl text-orange-500 mb-3 md:mb-4">Horario</h3>
-            <p className="text-gray-300 mb-2 text-sm md:text-base">Martes a Sabado: 5:30 PM - 11:00 PM</p>
+            <p className="text-gray-300 mb-2 text-sm md:text-base">Lunes a Sabado: 5:00 PM - 11:00 PM</p>
           </div>
           
           <div>
@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="#" className="text-white hover:text-orange-500 transition-colors duration-300">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-white hover:text-orange-500 transition-colors duration-300">
+              <a href="https://www.instagram.com/santahamburguesa.vd/" className="text-white hover:text-orange-500 transition-colors duration-300">
                 <Instagram className="w-6 h-6" />
               </a>
               <a href="#" className="text-white hover:text-orange-500 transition-colors duration-300">

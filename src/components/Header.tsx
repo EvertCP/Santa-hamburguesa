@@ -21,7 +21,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen }: HeaderProps) => {
         {/* Logo centrado en todas las vistas */}
         <div className="flex items-center gap-2 md:gap-4 flex-1 justify-center">
           <h1 className="text-3xl md:text-5xl text-orange-500 drop-shadow-lg flex items-baseline gap-2">
-            <span className="font-above-beyond text-white text-5xl">Santa</span>
+            <span className="corinthia-bold text-white text-6xl">Santa</span>
             <span className="font-bbh-sans">Hamburguesa</span>
           </h1>
         </div>

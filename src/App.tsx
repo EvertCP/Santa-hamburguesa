@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import SideMenu from './components/SideMenu'
 import MenuSection from './components/MenuSection'
 import Footer from './components/Footer'
+import AudioPlayer from './components/AudioPlayer'
 import { menuData } from './data/MenuData'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-900">
+      <AudioPlayer />
       <Header 
         isMobileMenuOpen={isMobileMenuOpen} 
         setIsMobileMenuOpen={setIsMobileMenuOpen}
