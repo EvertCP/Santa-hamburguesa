@@ -233,15 +233,17 @@ const RatingSection = () => {
               <div className="flex gap-4">
                 <button
                   type="submit"
-                  className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
+                  disabled={isSubmitting}
+                  className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   <Send className="w-5 h-5" />
-                  Enviar Comentarios
+                  {isSubmitting ? 'Enviando...' : 'Enviar Comentarios'}
                 </button>
                 <button
                   type="button"
                   onClick={resetRating}
-                  className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors"
+                  disabled={isSubmitting}
+                  className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Cancelar
                 </button>
