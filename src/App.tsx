@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Banner from './components/Banner'
 import SideMenu from './components/SideMenu'
 import MenuSection from './components/MenuSection'
+import RatingSection from './components/RatingSection'
 import Footer from './components/Footer'
 import AudioPlayer from './components/AudioPlayer'
 import { menuData } from './data/MenuData'
@@ -27,11 +28,15 @@ function App() {
           setIsMobileMenuOpen={setIsMobileMenuOpen}
         />
         <main className="flex-1 px-4 md:px-8 py-6 md:py-8 w-full">
-          {menuData
-            .filter((section) => section.id === activeSection)
-            .map((section) => (
-              <MenuSection key={section.id} section={section} />
-            ))}
+          {activeSection === 'califícanos' ? (
+            <RatingSection />
+          ) : (
+            menuData
+              .filter((section) => section.id === activeSection)
+              .map((section) => (
+                <MenuSection key={section.id} section={section} />
+              ))
+          )}
         </main>
       </div>
       <Footer />

@@ -13,13 +13,13 @@ export const menuData = [
         name: 'Santo Toribio',
         description: '180gr. de carne, queso cheddar, mermelada de tocino, mayonesa de ajo rostizado, jitomate, cebolla y lechuga.',
         price: '$155',
-        image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop'
+        image: 'santotoribio.jpeg'
       },
       {
         name: 'San Pancho',
         description: '200gr. de camarón y pimiento molido, ensalada de col, macha de jengibre, mayonesa de ajo rostizado y encurtido.',
         price: '$165',
-        image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop'
+        image: 'sanpancho.jpeg'
       },
       {
         name: 'Cochi Bendito',
@@ -31,13 +31,13 @@ export const menuData = [
         name: 'Santo Gallo',
         description: '180gr de pierna y muslo de pollo empanizado, cebolla morada, zanahoria, col morada y aderezo ranch.',
         price: '$155',
-        image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop'
+        image: 'santogallo.jpeg'
       },
       {
         name: 'San Chamo',
         description: '180gr. de chamorro con adobo de birria, cebolla morada encurtida y habanero con toques de orégano.',
         price: '$155',
-        image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop'
+        image: 'sanchamo.jpeg'
       }
     ]
   },
@@ -49,19 +49,19 @@ export const menuData = [
         name: 'Dogo norteño',
         description: 'Pan artesanal, salchicha de res, mayonesa de ajo, jitomate, mermelada de tocino, mostaza y un salteado de cebolla y chile guero.',
         price: '$109',
-        image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop'
+        image: 'dogonorteño.jpeg'
       },
       {
         name: 'Choripan',
         description: 'Pan artesanal, chimichurri de miso, mayonesa de ajo, chorizo, queso cheddar y perejil.',
         price: '$109',
-        image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop'
+        image: 'choripan.jpeg'
       },
       {
         name: 'Pizza individual de pollo',
         description: 'Salsa de tomate ahumada, queso cheddar, pollo a las finas hierbas, cebolla morada y cilantro alineados con aceite de ajo y balsámico.',
         price: '$140',
-        image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop'
+        image: 'pizza.jpeg'
       },
       {
         name: 'Melisiosos',
@@ -79,19 +79,19 @@ export const menuData = [
         name: 'Agua fresca LT',
         description: '500ml (Coca-Cola, Sprite, Fanta, etc.)',
         price: '$45',
-        image: 'https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=300&fit=crop'
+        image: 'agua.jpg'
       },
       {
         name: 'Agua fresca 1/2 lt',
         description: 'Especial de temporada',
         price: '$30',
-        image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop'
+        image: 'agua.jpg'
       },
       {
         name: 'Coca cola 600ml',
         description: '500ml con o sin gas',
         price: '$40',
-        image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop'
+        image: 'refresco.jpg'
       },
       {
         name: 'refresco de sabor',
@@ -109,13 +109,13 @@ export const menuData = [
         name: 'Santa Deli',
         description: '',
         tag: '$65',
-        image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=300&fit=crop'
+        image: 'santadeli.jpeg'
       },
       {
         name: '2 pizzas individuales mexicanas',
         description: '',
         tag: '$99',
-        image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop'
+        image: 'pizza.jpeg'
       }
     ]
   }

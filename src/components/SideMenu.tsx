@@ -1,4 +1,4 @@
-import { Beef, Ghost, Coffee, Tag } from 'lucide-react'
+import { Beef, Ghost, Coffee, Tag, Star } from 'lucide-react'
 
 interface SideMenuProps {
   activeSection: string
@@ -12,6 +12,7 @@ const menuItems = [
   { id: 'santo-antojadon', label: 'Santo Antojadon', icon: Ghost },
   { id: 'promociones', label: 'Promociones', icon: Tag },
   { id: 'bebidas', label: 'Bebidas', icon: Coffee },
+  { id: 'califícanos', label: 'Califícanos', icon: Star },
 ]
 
 const SideMenu = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobileMenuOpen }: SideMenuProps) => {
