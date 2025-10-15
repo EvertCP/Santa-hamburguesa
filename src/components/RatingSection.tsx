@@ -36,8 +36,9 @@ const RatingSection = () => {
     setIsSubmitting(true)
 
     try {
-      // URL del backend (ajusta según tu configuración)
-      const API_URL = 'http://localhost:3001/api/rating/submit-low-rating'
+      // URL del backend desde variable de entorno
+      const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+      const API_URL = `${API_BASE_URL}/api/rating/submit-low-rating`
 
       // Enviar datos al backend
       const response = await fetch(API_URL, {
