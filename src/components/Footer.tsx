@@ -1,4 +1,4 @@
-import { Phone, MapPin, Facebook, Instagram, MessageCircle } from 'lucide-react'
+import { Phone, MapPin, Facebook, Instagram } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <h3 className="font-creepster text-xl md:text-2xl text-orange-500 mb-3 md:mb-4">Contacto</h3>
             <p className="text-gray-300 mb-2 flex items-center gap-2 text-sm md:text-base">
-              <Phone className="w-4 h-4" /> 55 1234 5678
+              <Phone className="w-4 h-4" /> 32 2103 2020
             </p>
             <p className="text-gray-300 flex items-center gap-2 text-sm md:text-base">
               <MapPin className="w-4 h-4" /> Valle nacional #185, Valle dorado.
@@ -28,9 +28,6 @@ const Footer = () => {
               </a>
               <a href="https://www.instagram.com/santahamburguesa.vd/" className="text-white hover:text-orange-500 transition-colors duration-300">
                 <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-white hover:text-orange-500 transition-colors duration-300">
-                <MessageCircle className="w-6 h-6" />
               </a>
             </div>
           </div>

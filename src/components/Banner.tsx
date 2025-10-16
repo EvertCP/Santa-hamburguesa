@@ -4,17 +4,13 @@ const promotions = [
   {
     title: '¡ESPECIAL DE HALLOWEEN!',
     text: 'Prueba nuestra nueva "Zombie Burger" con queso fundido de calabaza',
-    highlight: 'Zombie Burger'
+    highlight: 'Zombie Burger',
+    validUntil: 'Válido hasta el 15 de Noviembre'
   },
   {
     title: '¡OFERTA ESPECIAL!',
-    text: 'Martes de Terror: 2x1 en todas las hamburguesas después de las 8 PM',
-    highlight: '2x1 en todas las hamburguesas'
-  },
-  {
-    title: '¡PROMOCIÓN!',
-    text: 'Lleva un Combo Familiar y llévate una malteada de calabaza GRATIS',
-    highlight: 'malteada de calabaza GRATIS'
+    text: 'Santa Deli a solo $65!',
+    highlight: 'Santa Deli',
   }
 ]
 
@@ -46,7 +42,7 @@ const Banner = () => {
           <span className="text-yellow-300 font-bold">{promo.highlight}</span>
           {promo.text.split(promo.highlight)[1]}
         </p>
-        <p className="text-sm md:text-base lg:text-lg mt-2 md:mt-3">Válido hasta el 31 de Octubre</p>
+        <p className="text-sm md:text-base lg:text-lg mt-2 md:mt-3">{promo.validUntil}</p>
       </div>
     </div>
   )

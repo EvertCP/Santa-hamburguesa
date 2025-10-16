@@ -4,10 +4,10 @@ export const menuData = [
     title: 'Hamburguesas',
     items: [
       {
-        name: 'Pa Q´ te la San Pancho si ya te la Sayulita',
-        description: 'Carne de res y camarón, pan artesanal, mayonesa de ajo rostizado, queso cheddar, mermelada de tocino, tomate y cebolla.',
-        price: '$199',
-        image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop'
+        name: 'Santa Deli',
+        description: 'Carne de res, pan artesanal, mayonesa de ajo rostizado, queso cheddar, tomate y cebolla.',
+        price: '$65',
+        image: 'santadeli.jpeg'
       },
       {
         name: 'Santo Toribio',
@@ -97,7 +97,7 @@ export const menuData = [
         name: 'refresco de sabor',
         description: '500ml con o sin gas',
         price: '$40',
-        image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop'
+        image: 'refresco.jpg'
       }
     ]
   },
