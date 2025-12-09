@@ -17,9 +17,9 @@ const MenuItem = ({ item, isPromo }: MenuItemProps) => {
 
   return (
     <div
-      className={`bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 border-2 ${
-        isPromo ? 'border-purple-500' : 'border-orange-500'
-      } ${isHovered ? 'transform -translate-y-1 md:-translate-y-2 shadow-2xl shadow-orange-500/50' : ''}`}
+      className={`bg-christmas-cream rounded-lg overflow-hidden shadow-lg transition-all duration-300 border-3 ${
+        isPromo ? 'border-christmas-green' : 'border-christmas-red'
+      } ${isHovered ? 'transform -translate-y-1 md:-translate-y-2 shadow-2xl shadow-christmas-gold/50' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -30,30 +30,30 @@ const MenuItem = ({ item, isPromo }: MenuItemProps) => {
           alt={item.name}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-40"></div>
       </div>
 
       {/* Contenido */}
       <div className="p-4 md:p-5">
-        <h3 className="font-creepster text-xl md:text-2xl text-orange-500 mb-2">
+        <h3 className="font-mountains text-xl md:text-2xl text-christmas-red mb-2">
           {item.name}
         </h3>
-        <p className="text-gray-300 mb-3 md:mb-4 text-sm leading-relaxed">{item.description}</p>
+        <p className="text-gray-700 mb-3 md:mb-4 text-sm leading-relaxed">{item.description}</p>
 
         <div className="flex items-center justify-between flex-wrap gap-2">
           {item.price && (
-            <span className="bg-orange-500 text-white px-3 md:px-4 py-1.5 md:py-2 rounded-full font-bold text-base md:text-lg">
+            <span className="bg-christmas-red text-white px-3 md:px-4 py-1.5 md:py-2 rounded-full font-bold text-base md:text-lg">
               {item.price}
             </span>
           )}
           <div className="flex gap-2">
             {item.discount && (
-              <span className="bg-red-500 text-white px-2 md:px-3 py-1 rounded-full text-xs font-bold">
+              <span className="bg-christmas-dark-red text-white px-2 md:px-3 py-1 rounded-full text-xs font-bold">
                 {item.discount}
               </span>
             )}
             {item.tag && (
-              <span className="bg-purple-500 text-white px-2 md:px-3 py-1 rounded-full text-xs">
+              <span className="bg-christmas-green text-white px-2 md:px-3 py-1 rounded-full text-xs">
                 {item.tag}
               </span>
             )}

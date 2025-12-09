@@ -1,7 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&family=Dancing+Script:wght@700&family=BBH+Sans+Bogle&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&family=Dancing+Script:wght@700&family=BBH+Sans+Bogle&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
+
+@theme {
+  /* Colores navideños */
+  --color-christmas-red: #C41E3A;
+  --color-christmas-green: #165B33;
+  --color-christmas-gold: #FFD700;
+  --color-christmas-dark-red: #8B0000;
+  --color-christmas-cream: #FFF8E7;
+  
+  /* Fuentes navideñas */
+  --font-family-mountains: 'Cinzel', serif;
+  --font-family-dancing: 'Dancing Script', cursive;
+  --font-family-bbh-sans: 'BBH Sans Bogle', sans-serif;
+}
 
 body {
   margin: 0;
@@ -10,11 +24,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-creepster {
-  font-family: 'Creepster', cursive;
+.font-mountains {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
 }
 
-.font-above-beyond {
+.font-dancing {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
 }
@@ -37,42 +52,4 @@ body {
 }
 
 
-/* Máscara de revelación con calabaza */
-.reveal-mask {
-  position: relative;
-}
-
-/* Fondo negro con máscara que revela el contenido */
-.reveal-mask::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: black;
-  -webkit-mask: 
-    linear-gradient(white, white),
-    url(/calabaza.png) center/50px no-repeat;
-  mask: 
-    linear-gradient(white, white),
-    url(/calabaza.png) center/50px no-repeat;
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: lock-reveal 3s forwards ease-in-out;
-  pointer-events: none;
-}
-
-@keyframes lock-reveal {
-  0% {
-    -webkit-mask-size: auto, 50px;
-    mask-size: auto, 50px;
-  }
-  100% {
-    -webkit-mask-size: auto, 1000vh;
-    mask-size: auto, 1000vh;
-  }
-}
-
-/* Remover la clase después de la animación */
-.reveal-mask.reveal-complete::before {
-  display: none;
-}
+/* Animación navideña removida - tema limpio y festivo */

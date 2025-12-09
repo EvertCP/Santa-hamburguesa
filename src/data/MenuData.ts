@@ -67,7 +67,7 @@ export const menuData = [
         name: 'Melisiosos',
         description: 'Boneless con salsa de su eleccion.',
         price: '$135',
-        image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop'
+        image: 'melisiosos.jpeg'
       }
     ]
   },

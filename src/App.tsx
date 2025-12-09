@@ -5,7 +5,7 @@ import SideMenu from './components/SideMenu'
 import MenuSection from './components/MenuSection'
 import RatingSection from './components/RatingSection'
 import Footer from './components/Footer'
-import AudioPlayer from './components/AudioPlayer'
+// import AudioPlayer from './components/AudioPlayer'
 import { menuData } from './data/MenuData'
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-gray-900">
-      <AudioPlayer />
+    <div className="min-h-screen bg-christmas-cream">
+      {/* <AudioPlayer /> */}
       <Header 
         isMobileMenuOpen={isMobileMenuOpen} 
         setIsMobileMenuOpen={setIsMobileMenuOpen}

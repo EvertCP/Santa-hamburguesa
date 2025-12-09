@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// Configuración navideña
 export default {
   content: [
     "./index.html",
@@ -7,12 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'halloween-orange': '#ff7b25',
-        'halloween-purple': '#6a0dad',
+        'christmas-red': '#C41E3A',
+        'christmas-green': '#165B33',
+        'christmas-gold': '#FFD700',
+        'christmas-dark-red': '#8B0000',
+        'christmas-cream': '#FFF8E7',
       },
       fontFamily: {
-        'creepster': ['Creepster', 'cursive'],
-        'above-beyond': ['Dancing Script', 'cursive'],
+        'mountains': ['Cinzel', 'serif'],
+        'dancing': ['Dancing Script', 'cursive'],
         'bbh-sans': ['BBH Sans Bogle', 'sans-serif'],
       },
       animation: {

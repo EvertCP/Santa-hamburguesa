@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 
 const promotions = [
   {
-    title: '¡ESPECIAL DE HALLOWEEN!',
-    text: 'Prueba nuestra nueva "Zombie Burger" con queso fundido de calabaza',
-    highlight: 'Zombie Burger',
-    validUntil: 'Válido hasta el 15 de Noviembre'
+    title: 'FELICES FIESTAS',
+    text: 'Prueba nuestras "Galletas de temporada" y nuestro polvoron sevillano de vainilla.',
+    highlight: 'Galletas de temporada',
+    validUntil: 'Válido hasta el 31 de Diciembre'
   },
   {
     title: '¡OFERTA ESPECIAL!',
@@ -27,22 +27,22 @@ const Banner = () => {
   const promo = promotions[currentPromo]
 
   return (
-    <div className="relative text-white text-center py-8 md:py-16 lg:py-20 animate-pulse-slow overflow-hidden md:min-h-[300px] lg:min-h-[450px] lg:w-[1200px] lg:mx-auto">
+    <div className="relative text-white text-center py-8 md:py-16 lg:py-20 overflow-hidden md:min-h-[300px] lg:min-h-[450px] w-full">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/banner-halloween-rojo.png)' }}
+        style={{ backgroundImage: 'url(/banner-navidad.png)' }}
       />
       
       {/* Content */}
       <div className="relative z-10 max-w-full mx-auto px-4">
-        <h1 className="font-creepster text-2xl md:text-4xl lg:text-5xl mb-2 md:mb-3">{promo.title}</h1>
-        <p className="text-base md:text-xl lg:text-2xl">
+        <h1 className="font-mountains text-2xl md:text-4xl lg:text-5xl mb-2 md:mb-3 text-christmas-gold drop-shadow-lg">{promo.title}</h1>
+        <p className="text-base md:text-xl lg:text-2xl font-bold">
           {promo.text.split(promo.highlight)[0]}
-          <span className="text-yellow-300 font-bold">{promo.highlight}</span>
+          <span className="text-christmas-gold font-bold text-shadow">{promo.highlight}</span>
           {promo.text.split(promo.highlight)[1]}
         </p>
-        <p className="text-sm md:text-base lg:text-lg mt-2 md:mt-3">{promo.validUntil}</p>
+        <p className="text-sm md:text-base lg:text-lg mt-2 md:mt-3 text-christmas-gold">{promo.validUntil}</p>
       </div>
     </div>
   )

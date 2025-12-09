@@ -35,13 +35,13 @@ const SideMenu = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobi
       <aside
         className={`
           fixed md:sticky top-0 left-0 h-screen
-          w-64 bg-black border-r-2 border-orange-500
+          w-64 bg-christmas-red border-r-4 border-christmas-gold
           transform transition-transform duration-300 ease-in-out z-50
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         `}
       >
         <div className="p-4 md:p-6 mt-16 md:mt-0">
-          <h2 className="font-creepster text-2xl text-orange-500 mb-6">Menú</h2>
+          <h2 className="font-mountains text-2xl text-christmas-gold mb-6">Menú</h2>
           <nav>
             <ul className="space-y-2">
               {menuItems.map((item) => {
@@ -52,8 +52,8 @@ const SideMenu = ({ activeSection, setActiveSection, isMobileMenuOpen, setIsMobi
                       onClick={() => handleSectionClick(item.id)}
                       className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${
                         activeSection === item.id
-                          ? 'bg-orange-500 text-white shadow-lg'
-                          : 'text-gray-300 hover:bg-gray-800 hover:text-orange-500'
+                          ? 'bg-christmas-gold text-christmas-dark-red shadow-lg font-bold'
+                          : 'text-white hover:bg-christmas-dark-red hover:text-christmas-gold'
                       }`}
                     >
                       <Icon className="w-5 h-5" />
