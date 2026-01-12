@@ -29,11 +29,11 @@ const MenuSection = ({ section }: MenuSectionProps) => {
   return (
     <section id={section.id} className="mb-8 md:mb-12">
       <div className="mb-6 md:mb-8">
-        <h2 className="font-mountains text-3xl md:text-5xl text-christmas-red mb-2 flex items-center gap-2 md:gap-3">
+        <h2 className="font-mountains text-3xl md:text-5xl text-text-primary mb-2 flex items-center gap-2 md:gap-3">
           {Icon && <Icon className="w-8 h-8 md:w-10 md:h-10" />}
           {section.title}
         </h2>
-        <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-christmas-red to-christmas-dark-red rounded-full"></div>
+        <div className="h-1 w-24 md:w-32 bg-gradient-to-r from-accent to-accent/60 rounded-full"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {section.items.map((item, index) => (

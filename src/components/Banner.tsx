@@ -27,22 +27,19 @@ const Banner = () => {
   const promo = promotions[currentPromo]
 
   return (
-    <div className="relative text-white text-center py-8 md:py-16 lg:py-20 overflow-hidden md:min-h-[300px] lg:min-h-[450px] w-full">
+    <div className="relative text-text-primary text-center py-8 md:py-16 lg:py-20 overflow-hidden md:min-h-[300px] lg:min-h-[300px] w-full">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/banner-navidad.png)' }}
-      />
+      <div className="absolute inset-0 bg-dark-primary banner-pattern" />
       
       {/* Content */}
       <div className="relative z-10 max-w-full mx-auto px-4">
-        <h1 className="font-mountains text-2xl md:text-4xl lg:text-5xl mb-2 md:mb-3 text-christmas-gold drop-shadow-lg">{promo.title}</h1>
-        <p className="text-base md:text-xl lg:text-2xl font-bold">
+        <h1 className="font-mountains text-2xl md:text-4xl lg:text-5xl mb-2 md:mb-3 text-accent drop-shadow-lg">{promo.title}</h1>
+        <p className="text-base md:text-xl lg:text-2xl font-bold text-text-primary">
           {promo.text.split(promo.highlight)[0]}
-          <span className="text-christmas-gold font-bold text-shadow">{promo.highlight}</span>
+          <span className="text-accent font-bold text-shadow">{promo.highlight}</span>
           {promo.text.split(promo.highlight)[1]}
         </p>
-        <p className="text-sm md:text-base lg:text-lg mt-2 md:mt-3 text-christmas-gold">{promo.validUntil}</p>
+        <p className="text-sm md:text-base lg:text-lg mt-2 md:mt-3 text-text-secondary">{promo.validUntil}</p>
       </div>
     </div>
   )

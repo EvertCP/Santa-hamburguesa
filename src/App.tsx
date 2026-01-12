@@ -13,7 +13,7 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-christmas-cream">
+    <div className="min-h-screen bg-dark-primary text-text-primary">
       {/* <AudioPlayer /> */}
       <Header 
         isMobileMenuOpen={isMobileMenuOpen} 

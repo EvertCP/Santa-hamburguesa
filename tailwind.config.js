@@ -8,16 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'christmas-red': '#C41E3A',
-        'christmas-green': '#165B33',
-        'christmas-gold': '#FFD700',
-        'christmas-dark-red': '#8B0000',
-        'christmas-cream': '#FFF8E7',
+        'dark-primary': '#1A1A1D',
+        'dark-secondary': '#252529',
+        'accent': '#C5A880',
+        'text-primary': '#FFFFFF',
+        'text-secondary': '#B0B0B0',
       },
       fontFamily: {
-        'mountains': ['Cinzel', 'serif'],
-        'dancing': ['Dancing Script', 'cursive'],
-        'bbh-sans': ['BBH Sans Bogle', 'sans-serif'],
+        'sans': ['Inter', 'sans-serif'],
+        'serif': ['Playfair Display', 'serif'],
       },
       animation: {
         'float': 'float 3s ease-in-out infinite',

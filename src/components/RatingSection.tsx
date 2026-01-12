@@ -90,11 +90,11 @@ const RatingSection = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="bg-christmas-cream rounded-lg shadow-2xl p-8 border-4 border-christmas-red">
-        <h2 className="font-mountains text-4xl text-christmas-red mb-4 text-center">
+      <div className="bg-dark-secondary rounded-lg shadow-2xl p-8 border border-accent/40">
+        <h2 className="font-mountains text-4xl text-accent mb-4 text-center">
           ¡Califícanos!
         </h2>
-        <p className="text-gray-700 text-center mb-8">
+        <p className="text-text-secondary text-center mb-8">
           Tu opinión es muy importante para nosotros
         </p>
 
@@ -112,7 +112,7 @@ const RatingSection = () => {
                 <Star
                   className={`w-12 h-12 md:w-16 md:h-16 ${
                     star <= (hoveredRating || rating)
-                      ? 'fill-christmas-gold text-christmas-gold'
+                      ? 'fill-accent text-accent'
                       : 'text-gray-400'
                   }`}
                 />
@@ -131,21 +131,21 @@ const RatingSection = () => {
                     key={star}
                     className={`w-10 h-10 ${
                       star <= rating
-                        ? 'fill-christmas-gold text-christmas-gold'
+                        ? 'fill-accent text-accent'
                         : 'text-gray-400'
                     }`}
                   />
                 ))}
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-christmas-red mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
                 ¡Muchas gracias por tu excelente calificación!
               </h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-text-secondary mb-6">
                 Nos encantaría que compartieras tu experiencia en Google Maps
               </p>
               <button
                 onClick={handleGoogleMapsRedirect}
-                className="bg-christmas-red hover:bg-christmas-dark-red text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto shadow-lg"
+                className="bg-accent hover:bg-accent/90 text-dark-primary font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto shadow-lg"
               >
                 <MapPin className="w-5 h-5" />
                 Calificar en Google Maps
@@ -153,7 +153,7 @@ const RatingSection = () => {
             </div>
             <button
               onClick={resetRating}
-              className="text-gray-600 hover:text-christmas-red underline mt-4"
+              className="text-text-secondary hover:text-accent underline mt-4"
             >
               Cambiar calificación
             </button>
@@ -169,22 +169,22 @@ const RatingSection = () => {
                   key={star}
                   className={`w-8 h-8 ${
                     star <= rating
-                      ? 'fill-christmas-gold text-christmas-gold'
+                      ? 'fill-accent text-accent'
                       : 'text-gray-400'
                   }`}
                 />
               ))}
             </div>
-            <h3 className="text-2xl font-bold text-christmas-red mb-4 text-center">
+            <h3 className="text-2xl font-bold text-text-primary mb-4 text-center">
               Lamentamos que tu experiencia no haya sido la mejor
             </h3>
-            <p className="text-gray-700 mb-6 text-center">
+            <p className="text-text-secondary mb-6 text-center">
               Por favor, cuéntanos qué podemos mejorar
             </p>
             
             <form onSubmit={handleFormSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-gray-700 mb-2 font-medium">
+                <label htmlFor="name" className="block text-text-secondary mb-2 font-medium">
                   Nombre *
                 </label>
                 <input
@@ -194,13 +194,13 @@ const RatingSection = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:border-christmas-red transition-colors"
+                  className="w-full px-4 py-3 bg-dark-primary border border-dark-secondary rounded-lg text-text-primary focus:outline-none focus:border-accent transition-colors"
                   placeholder="Tu nombre"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-700 mb-2 font-medium">
+                <label htmlFor="email" className="block text-text-secondary mb-2 font-medium">
                   Correo Electrónico *
                 </label>
                 <input
@@ -210,13 +210,13 @@ const RatingSection = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:border-christmas-red transition-colors"
+                  className="w-full px-4 py-3 bg-dark-primary border border-dark-secondary rounded-lg text-text-primary focus:outline-none focus:border-accent transition-colors"
                   placeholder="tu@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="comments" className="block text-gray-700 mb-2 font-medium">
+                <label htmlFor="comments" className="block text-text-secondary mb-2 font-medium">
                   Comentarios *
                 </label>
                 <textarea
@@ -226,7 +226,7 @@ const RatingSection = () => {
                   onChange={handleInputChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:border-christmas-red transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-dark-primary border border-dark-secondary rounded-lg text-text-primary focus:outline-none focus:border-accent transition-colors resize-none"
                   placeholder="Cuéntanos qué podemos mejorar..."
                 />
               </div>
@@ -235,7 +235,7 @@ const RatingSection = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 bg-christmas-red hover:bg-christmas-dark-red text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="flex-1 bg-accent hover:bg-accent/90 text-dark-primary font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   <Send className="w-5 h-5" />
                   {isSubmitting ? 'Enviando...' : 'Enviar Comentarios'}
@@ -244,7 +244,7 @@ const RatingSection = () => {
                   type="button"
                   onClick={resetRating}
                   disabled={isSubmitting}
-                  className="px-6 py-3 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-6 py-3 bg-dark-primary hover:bg-dark-primary/70 text-text-primary rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed border border-dark-secondary"
                 >
                   Cancelar
                 </button>
@@ -255,7 +255,7 @@ const RatingSection = () => {
       </div>
 
       {/* Información adicional */}
-      <div className="mt-8 text-center text-gray-600 text-sm">
+      <div className="mt-8 text-center text-text-secondary text-sm">
         <p>Tus comentarios son confidenciales y nos ayudan a mejorar nuestro servicio</p>
       </div>
     </div>

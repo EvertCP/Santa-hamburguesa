@@ -17,9 +17,9 @@ const MenuItem = ({ item, isPromo }: MenuItemProps) => {
 
   return (
     <div
-      className={`bg-christmas-cream rounded-lg overflow-hidden shadow-lg transition-all duration-300 border-3 ${
-        isPromo ? 'border-christmas-green' : 'border-christmas-red'
-      } ${isHovered ? 'transform -translate-y-1 md:-translate-y-2 shadow-2xl shadow-christmas-gold/50' : ''}`}
+      className={`bg-dark-secondary rounded-lg overflow-hidden shadow-lg transition-all duration-300 border ${
+        isPromo ? 'border-accent' : 'border-accent/40'
+      } ${isHovered ? 'transform -translate-y-1 md:-translate-y-2 shadow-2xl shadow-black/30' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -35,25 +35,25 @@ const MenuItem = ({ item, isPromo }: MenuItemProps) => {
 
       {/* Contenido */}
       <div className="p-4 md:p-5">
-        <h3 className="font-mountains text-xl md:text-2xl text-christmas-red mb-2">
+        <h3 className="font-mountains text-xl md:text-2xl text-text-primary mb-2">
           {item.name}
         </h3>
-        <p className="text-gray-700 mb-3 md:mb-4 text-sm leading-relaxed">{item.description}</p>
+        <p className="text-text-secondary mb-3 md:mb-4 text-sm leading-relaxed">{item.description}</p>
 
         <div className="flex items-center justify-between flex-wrap gap-2">
           {item.price && (
-            <span className="bg-christmas-red text-white px-3 md:px-4 py-1.5 md:py-2 rounded-full font-bold text-base md:text-lg">
+            <span className="bg-accent text-dark-primary px-3 md:px-4 py-1.5 md:py-2 rounded-full font-bold text-base md:text-lg">
               {item.price}
             </span>
           )}
           <div className="flex gap-2">
             {item.discount && (
-              <span className="bg-christmas-dark-red text-white px-2 md:px-3 py-1 rounded-full text-xs font-bold">
+              <span className="bg-dark-primary text-text-primary px-2 md:px-3 py-1 rounded-full text-xs font-bold border border-accent/30">
                 {item.discount}
               </span>
             )}
             {item.tag && (
-              <span className="bg-christmas-green text-white px-2 md:px-3 py-1 rounded-full text-xs">
+              <span className="bg-dark-primary text-text-primary px-2 md:px-3 py-1 rounded-full text-xs border border-accent/30">
                 {item.tag}
               </span>
             )}

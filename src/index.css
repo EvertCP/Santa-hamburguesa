@@ -1,41 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&family=Dancing+Script:wght@700&family=BBH+Sans+Bogle&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Corinthia:wght@400;700&display=swap');
 
 @import "tailwindcss";
 
 @theme {
   /* Colores navideños */
-  --color-christmas-red: #C41E3A;
-  --color-christmas-green: #165B33;
-  --color-christmas-gold: #FFD700;
-  --color-christmas-dark-red: #8B0000;
-  --color-christmas-cream: #FFF8E7;
+  --color-christmas-red: #C5A880;
+  --color-christmas-green: #252529;
+  --color-christmas-gold: #C5A880;
+  --color-christmas-dark-red: #252529;
+  --color-christmas-cream: #1A1A1D;
+ 
+  --color-dark-primary: #F6F4F1;
+  --color-dark-secondary: #FFFFFF;
+  --color-accent: #8F6A3D;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+ 
+  --banner-image: url('/banner-claro.png');
   
   /* Fuentes navideñas */
-  --font-family-mountains: 'Cinzel', serif;
-  --font-family-dancing: 'Dancing Script', cursive;
-  --font-family-bbh-sans: 'BBH Sans Bogle', sans-serif;
+  --font-family-mountains: 'Playfair Display', serif;
+  --font-family-dancing: 'Playfair Display', serif;
+  --font-family-bbh-sans: 'Inter', sans-serif;
+ 
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-serif: 'Playfair Display', serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --color-dark-primary: #1A1A1D;
+  --color-dark-secondary: #252529;
+  --color-accent: #C5A880;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B0B0B0;
+  --banner-image: url('/banner-obscuro.png');
+  color-scheme: dark;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.banner-pattern {
+  background-image: var(--banner-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .banner-pattern {
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: 420px auto;
+  }
+}
+
 .font-mountains {
-  font-family: 'Cinzel', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
 
 .font-dancing {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
 
 .font-bbh-sans {
-  font-family: 'BBH Sans Bogle', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
 
