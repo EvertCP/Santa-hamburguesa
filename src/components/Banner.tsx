@@ -2,12 +2,6 @@ import { useState, useEffect } from 'react'
 
 const promotions = [
   {
-    title: 'FELICES FIESTAS',
-    text: 'Prueba nuestras "Galletas de temporada" y nuestro polvoron sevillano de vainilla.',
-    highlight: 'Galletas de temporada',
-    validUntil: 'Válido hasta el 31 de Diciembre'
-  },
-  {
     title: '¡OFERTA ESPECIAL!',
     text: 'Santa Deli a solo $65!',
     highlight: 'Santa Deli',
