@@ -9,7 +9,7 @@ interface HeaderProps {
 const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen }: HeaderProps) => {
   return (
     <header className="bg-dark-secondary shadow-lg relative z-50 border-b border-accent/40 sticky top-0">
-      <nav className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
+      <nav className="mx-auto md:px-8 py-4 md:py-6 flex justify-between items-center">
         {/* Botón hamburguesa para móvil */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -22,8 +22,8 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen }: HeaderProps) => {
         {/* Logo centrado en todas las vistas */}
         <div className="flex items-center gap-2 md:gap-4 flex-1 justify-center">
           <h1 className="text-3xl md:text-5xl text-text-primary drop-shadow-lg flex items-baseline gap-2">
-            <span className="corinthia-bold text-accent text-6xl">Santa</span>
-            <span className="font-mountains">Hamburguesa</span>
+            <span className="corinthia-bold text-accent text-4xl">Santa</span>
+            <span className="font-mountains text-2xl">Hamburguesa</span>
           </h1>
         </div>
 
