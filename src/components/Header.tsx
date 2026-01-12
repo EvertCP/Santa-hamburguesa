@@ -28,7 +28,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen }: HeaderProps) => {
         </div>
 
         {/* Espacio vacío para balance en móvil */}
-        <div className="w-12 flex justify-end">
+        <div className="flex justify-end">
           <ThemeToggle />
         </div>
       </nav>
