@@ -5,6 +5,7 @@ const promotions = [
     title: '¡OFERTA ESPECIAL!',
     text: 'Santa Deli a solo $65!',
     highlight: 'Santa Deli',
+    validUntil: '',
   }
 ]
 
